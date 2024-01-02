@@ -4,6 +4,9 @@
 #include <fstream>
 #include <algorithm>
 #include <cmath>
+#include <chrono>
+
+
 
 enum class OrderType
 {
@@ -159,14 +162,8 @@ public:
 
         try
         {
-            // print the string first
-            std::cout << "Price String" << tokens[3] << std::endl;
             price = std::stod(tokens[3]);
-            std::cout << "Price double" << price << std::endl;
-
-            std::cout << "Amount String" << tokens[4] << std::endl;
             amount = std::stod(tokens[4]);
-            std::cout << "Amount double" << amount << std::endl;
         }
         catch (const std::exception &e)
         {
@@ -182,8 +179,8 @@ public:
             stringToOrdertype(tokens[2])};
 
         // print the obe
-        std::cout << "OBE is created." << std::endl
-                  << "Price: " << obe.price << " Amount: " << obe.amount << " Timestamp: " << obe.timestamp << " Product: " << obe.product << " OrderType: " << ordertypeToString(obe.orderType) << std::endl;
+        // std::cout << "OBE is created." << std::endl
+        //           << "Price: " << obe.price << " Amount: " << obe.amount << " Timestamp: " << obe.timestamp << " Product: " << obe.product << " OrderType: " << ordertypeToString(obe.orderType) << std::endl;
 
         return obe;
     }
@@ -216,7 +213,6 @@ public:
             }
         }
         reOrder();
-        printOrderBooks();
     }
 
     // Buy order sorting comparator.
@@ -292,6 +288,12 @@ public:
         }
     }
 
+    void printOrderBookSize()
+    {
+        std::cout << "Buybook size: " << buyOrders.size() << std::endl;
+        std::cout << "Sellbook size: " << sellOrders.size() << std::endl;
+    }
+
     // Print the filledbook.
     void printFilledBook()
     {
@@ -299,6 +301,12 @@ public:
         {
             std::cout << "Price: " << order.price << " Amount: " << order.amount << " Timestamp: " << order.timestamp << " Product: " << order.product << " OrderType: " << ordertypeToString(order.orderType) << std::endl;
         }
+    }
+
+
+    void printFilledBookSize()
+    {
+        std::cout << "Filledbook size: " << filledBook.size() << std::endl;
     }
 
     // Cleanup function to remove the orders with amount 0 from the buyorder,sellorder orderbooks
@@ -310,6 +318,9 @@ public:
         sellOrders.erase(std::remove_if(sellOrders.begin(), sellOrders.end(), [](const Order &order)
                                         { return order.amount == 0; }),
                          sellOrders.end());
+        filledBook.erase(std::remove_if(filledBook.begin(), filledBook.end(), [](const Order &order)
+                                        { return order.amount == 0; }),
+                         filledBook.end());
     }
 
     void reOrder()
@@ -345,13 +356,23 @@ long long int Order::orderIdCounter = 345660;
 // create a simple main function to read a csv file and print the orderbook and filledbook.
 int main(int argc, char **argv)
 {
+    // measure time
+    auto start = std::chrono::high_resolution_clock::now();
+
 
     ATS ats;
     ats.parseCSV("data.csv");
     ats.matchOrders();
-    ats.printOrderBooks();
+    ats.printOrderBookSize();
 
     std::cout << std::endl;
     std::cout << "Filledbook" << std::endl;
-    ats.printFilledBook();
+    ats.printFilledBookSize();
+
+    // measure time
+    auto finish = std::chrono::high_resolution_clock::now();
+
+    std::chrono::duration<double> elapsed = finish - start;
+
+    std::cout << "Elapsed time: " << elapsed.count() << " s\n";
 }

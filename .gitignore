@@ -1,0 +1,7 @@
+# Ignore output files
+*.exe
+*.out
+*.o
+
+# Ignore data files
+data.csv
