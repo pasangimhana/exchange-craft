@@ -1,0 +1,16 @@
+# ninja log v5
+1	242	1704300121834228315	CMakeFiles/exchange_craft.dir/Order.cpp.o	d6122a10fab176c3
+1	352	1704300121942229265	CMakeFiles/exchange_craft.dir/OrderTypeConverter.cpp.o	8280b055e29fc76f
+1	413	1704300243679204622	CMakeFiles/exchange_craft.dir/Order.cpp.o	d6122a10fab176c3
+2	787	1704300261635333961	CMakeFiles/exchange_craft.dir/main.cpp.o	1c67f9365953b64b
+1	377	1704300565101093183	CMakeFiles/exchange_craft.dir/main.cpp.o	1c67f9365953b64b
+1	388	1704300694525659700	CMakeFiles/exchange_craft.dir/main.cpp.o	1c67f9365953b64b
+1	460	1704300734329817910	CMakeFiles/exchange_craft.dir/CSVProcessor.cpp.o	301a8f622ccebc2a
+1	475	1704300734345817972	CMakeFiles/exchange_craft.dir/main.cpp.o	1c67f9365953b64b
+1	321	1704300815322120093	CMakeFiles/exchange_craft.dir/OrderTypeConverter.cpp.o	8280b055e29fc76f
+1	668	1704300815670121339	CMakeFiles/exchange_craft.dir/CSVProcessor.cpp.o	301a8f622ccebc2a
+1	753	1704300815754121639	CMakeFiles/exchange_craft.dir/main.cpp.o	1c67f9365953b64b
+1	812	1704300825442156143	CMakeFiles/exchange_craft.dir/ExchangeCore.cpp.o	edf0056d3e1d8eda
+812	930	1704300825558156554	exchange_craft	4c016b3629fd0e1d
+1	669	1704300880434346013	CMakeFiles/exchange_craft.dir/main.cpp.o	1c67f9365953b64b
+669	793	1704300880558346430	exchange_craft	4c016b3629fd0e1d

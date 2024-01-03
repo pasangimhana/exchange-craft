@@ -1,0 +1,3 @@
+/home/phaser/personal-projects/exchange-craft/cmake-build-debug/CMakeFiles/exchange_craft.dir
+/home/phaser/personal-projects/exchange-craft/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/phaser/personal-projects/exchange-craft/cmake-build-debug/CMakeFiles/rebuild_cache.dir
