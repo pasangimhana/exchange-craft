@@ -1,16 +1,14 @@
 ```
-
- _____          _                                   ____            __ _        _        ___  
-| ____|_  _____| |__   __ _ _ __   __ _  ___       / ___|_ __ __ _ / _| |_     / |      / _ \ 
-|  _| \ \/ / __| '_ \ / _` | '_ \ / _` |/ _ \_____| |   | '__/ _` | |_| __|    | |     | | | |
-| |___ >  < (__| | | | (_| | | | | (_| |  __/_____| |___| | | (_| |  _| |_     | |  _  | |_| |
-|_____/_/\_\___|_| |_|\__,_|_| |_|\__, |\___|      \____|_|  \__,_|_|  \__|    |_| (_)  \___/ 
-                                  |___/                                                       
-                                  
+ _____          _                                   ____            __ _     ____    ___  
+| ____|_  _____| |__   __ _ _ __   __ _  ___       / ___|_ __ __ _ / _| |_  |___ \  / _ \ 
+|  _| \ \/ / __| '_ \ / _` | '_ \ / _` |/ _ \_____| |   | '__/ _` | |_| __|   __) || | | |
+| |___ >  < (__| | | | (_| | | | | (_| |  __/_____| |___| | | (_| |  _| |_   / __/ | |_| |
+|_____/_/\_\___|_| |_|\__,_|_| |_|\__, |\___|      \____|_|  \__,_|_|  \__| |_____(_)___/ 
+                                  |___/                                                                                                              
 ```
-## Simple ATS (Automated Trading System) Implementation
+## Simple ATS (Automated Trading System) Implementation - Version 2.0
 
-This C++ program implements a basic Automated Trading System (ATS) to handle buy and sell orders for a financial product. The ATS uses a simple matching engine to match buy and sell orders based on price levels.
+This C++ program, now in its Version 2.0, continues to implement a basic Automated Trading System (ATS) for handling buy and sell orders in the financial domain. The latest version brings structural improvements for better code organization.
 
 ## Features
 - **Order Structure**: Defines an `Order` structure with attributes such as price, amount, timestamp, product, and order type (buy, sell, or sold).
@@ -23,7 +21,7 @@ This C++ program implements a basic Automated Trading System (ATS) to handle buy
 
 ## How to Use
 1. **CSV Input**: Create a CSV file with order data in the format: `timestamp, product, order_type, price, amount`.
-2. **Program Execution**: Modify the `main` function in the provided C++ code to specify the CSV file path (`ats.parseCSV("your_data.csv");`).
+2. **Program Execution**: Modify the `main` function in the provided C++ code to specify the CSV file path (`exchangeCore.parseCSV("your_data.csv");`).
 3. **Run the Program**: Compile and run the C++ program to see the order book sizes and the filled order book.
 
 ## Execution Time
@@ -40,4 +38,4 @@ This ATS implementation is provided under an open-source license. Feel free to m
 
 ---
 
-*Note: This is a basic ATS implementation, and additional features and optimizations can be added for a more robust trading system.*
+*Note: Version 2.0 introduces structural enhancements, making the code more organized and maintainable.*
