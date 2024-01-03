@@ -17,7 +17,7 @@ class CSVProcessor {
 public:
     CSVProcessor();
 
-    std::vector<Order> processCSV(const std::string& fileName);
+    std::vector<Order> processCSV(std::string fileName);
 
     std::vector<std::string> tokenize(std::string csvLine, char separator);
 

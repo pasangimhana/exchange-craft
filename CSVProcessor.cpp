@@ -11,17 +11,26 @@ CSVProcessor::CSVProcessor()
         std::cout << "CSVProcessor created" << std::endl;
     }
 
-    std::vector<Order> CSVProcessor::processCSV(const std::string& fileName)
+    std::vector<Order> CSVProcessor::processCSV(std::string fileName)
     {
 
         std::ifstream csvFile{fileName};
+
+//        std::cout << "CSVReader::readCSV() - opening file: " << fileName << std::endl;
         std::string line;
+
+        if (!csvFile.is_open()) {
+            std::cout << "Error opening file: " << fileName << std::endl;
+            return entries; // or throw an exception
+        }
 
         if (csvFile.is_open())
         {
+//            std::cout << "CSVReader::readCSV() - file opened successfully." << std::endl;
 
             while (std::getline(csvFile, line))
             {
+//                std::cout << "CSVReader::readCSV() - line: " << line << std::endl;
                 try
                 {
                     Order obe = stringstoOBE(tokenize(line, ','));
