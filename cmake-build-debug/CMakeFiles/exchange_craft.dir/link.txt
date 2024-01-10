@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/exchange_craft.dir/frontend/CSVProcessor.cpp.o CMakeFiles/exchange_craft.dir/ExchangeCore.cpp.o CMakeFiles/exchange_craft.dir/main.cpp.o CMakeFiles/exchange_craft.dir/Order.cpp.o CMakeFiles/exchange_craft.dir/OrderTypeConverter.cpp.o -o exchange_craft 

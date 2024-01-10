@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="exchange_craft"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/phaser/personal-projects/exchange-craft/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exchange_craft">
+				<Option output="/home/phaser/personal-projects/exchange-craft/cmake-build-debug/exchange_craft" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/phaser/personal-projects/exchange-craft/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/phaser/personal-projects/exchange-craft/."/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/llvm-16/lib/clang/16/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 exchange_craft"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exchange_craft/fast">
+				<Option output="/home/phaser/personal-projects/exchange-craft/cmake-build-debug/exchange_craft" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/phaser/personal-projects/exchange-craft/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/phaser/personal-projects/exchange-craft/."/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/llvm-16/lib/clang/16/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 exchange_craft/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/phaser/personal-projects/exchange-craft/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/phaser/personal-projects/exchange-craft/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/phaser/personal-projects/exchange-craft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/phaser/personal-projects/exchange-craft/ExchangeCore.cpp">
+			<Option target="exchange_craft"/>
+		</Unit>
+		<Unit filename="/home/phaser/personal-projects/exchange-craft/ExchangeCore.h">
+			<Option target="exchange_craft"/>
+		</Unit>
+		<Unit filename="/home/phaser/personal-projects/exchange-craft/Order.cpp">
+			<Option target="exchange_craft"/>
+		</Unit>
+		<Unit filename="/home/phaser/personal-projects/exchange-craft/Order.h">
+			<Option target="exchange_craft"/>
+		</Unit>
+		<Unit filename="/home/phaser/personal-projects/exchange-craft/OrderTypeConverter.cpp">
+			<Option target="exchange_craft"/>
+		</Unit>
+		<Unit filename="/home/phaser/personal-projects/exchange-craft/OrderTypeConverter.h">
+			<Option target="exchange_craft"/>
+		</Unit>
+		<Unit filename="/home/phaser/personal-projects/exchange-craft/frontend/CSVProcessor.cpp">
+			<Option target="exchange_craft"/>
+		</Unit>
+		<Unit filename="/home/phaser/personal-projects/exchange-craft/frontend/CSVProcessor.h">
+			<Option target="exchange_craft"/>
+		</Unit>
+		<Unit filename="/home/phaser/personal-projects/exchange-craft/frontend/cli_frontend.h">
+			<Option target="exchange_craft"/>
+		</Unit>
+		<Unit filename="/home/phaser/personal-projects/exchange-craft/main.cpp">
+			<Option target="exchange_craft"/>
+		</Unit>
+		<Unit filename="/home/phaser/personal-projects/exchange-craft/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
